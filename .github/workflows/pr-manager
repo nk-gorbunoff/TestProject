@@ -1,0 +1,14 @@
+name: PR Manager Action
+
+on:
+  workflow_dispatch:
+
+jobs:
+  send_slack_notification:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Send Slack Notification
+      uses: nk-gorbunoff/TestGithubAction@v1
