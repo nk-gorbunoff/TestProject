@@ -2,6 +2,7 @@ name: PR Manager Action
 
 on:
   workflow_dispatch:
+  push:
 
 jobs:
   send_slack_notification:
