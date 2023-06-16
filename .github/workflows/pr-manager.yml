@@ -11,6 +11,6 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Send Slack Notification
-      uses: nk-gorbunoff/TestGithubAction
+      uses: nk-gorbunoff/TestGithubAction@v1.0
       with: 
         slack_webhook: ${{ secrets.SLACK_WEBHOOK }}
