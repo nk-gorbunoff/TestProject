@@ -14,3 +14,4 @@ jobs:
       uses: nk-gorbunoff/TestGithubAction@1.3
       with: 
         slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
+        github_trigger_event: ${{ github.event_name }}
