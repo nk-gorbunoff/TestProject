@@ -13,5 +13,6 @@ jobs:
     - name: Send Slack Notification
       uses: nk-gorbunoff/TestGithubAction@master
       with: 
-        slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
-        github_trigger_event: ${{ github.event_name }}
+        slack_bot_auth_token: ${{ secrets.SLACK_BOT_AUTH_TOKEN }}
+        slack_channel_id: ${{ secrets.SLACK_CHANNEL_ID }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
