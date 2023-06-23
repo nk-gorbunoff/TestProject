@@ -10,8 +10,8 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
 
-    - name: Send Slack Notification
-      uses: nk-gorbunoff/TestGithubAction@master
+    - name: My action
+      uses: nk-gorbunoff/n7-action@master
       with: 
         slack_bot_auth_token: ${{ secrets.SLACK_BOT_AUTH_TOKEN }}
         slack_channel_id: ${{ secrets.SLACK_CHANNEL_ID }}
