@@ -5,7 +5,7 @@ on:
 
 jobs:
   send_slack_notification:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
