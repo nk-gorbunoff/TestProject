@@ -20,3 +20,4 @@ jobs:
         slack_bot_auth_token: ${{ secrets.SLACK_BOT_AUTH_TOKEN }}
         slack_channel_id: ${{ secrets.SLACK_CHANNEL_ID }}
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        pull_request_number: ${{ github.event.pull_request.number }}
