@@ -2,7 +2,7 @@ name: PR Manager Action
 
 on:
   schedule:
-    - cron: '36 14 * * *'
+    - cron: '40 14 * * *'
   workflow_dispatch:
   pull_request:
     types: [opened, reopened]
